@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Felipa&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Dream Avenue';
+    src: url(FontsFree-Net-Dream-Avenue.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header > a > img {
+    padding-top: 20px;
+    height: 100px;
+}
+
+.header > a > img:hover {
+    cursor: pointer;
+}
+
+.hero1 {
+    background: url(img/bg1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero1-content {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 200px;
+}
+
+.name-cont {
+    font-family: 'Dream Avenue';
+    color: #f1b329;
+    font-size: 100px;
+    align-self: center;
+}
+
+.name-cont > h1 > span {
+    color: #fae8e0;
+}
+
+.desc {
+    color: #fae8e0;
+    font-family: 'Tinos';
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.hero1-content > .btn {
+    align-self: center;
+    padding-top: 50px;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+button {
+    background-color: #fae8e0;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+ button:hover {
+    cursor: pointer;
+    background-color: #f1b329;
+    transition: ease-in-out .8s;
+}
+
+button > p {
+    padding: 10px 30px;
+    color: #88080c;
+    font-family: 'Charm';
+    font-size: 25px;
+}
+
+.hero2 {
+    background: url(img/bg2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px;
+    padding-top: 70px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.business-card {
+    margin: 100px;
+    display: flex;
+}
+
+.profile-cont > img{
+    height: 450px;
+}
+
+.profile-cont > img:hover {
+    transform: scale(1.05);
+}
+
+.left> .btn {
+    margin-top: 20px;
+}
+
+.center {
+    color: #fae8e0;
+    margin: 0px 50px;
+}
+
+.center > h2 {
+    font-family: 'Charm';
+    margin-bottom: 10px;
+}
+
+.center > h1 {
+    font-size: 50px;
+    font-family: 'Dream Avenue';
+    margin-bottom: 15px;
+}
+
+.center > h1 > span {
+    color: #f1b329;
+}
+
+.center > p {
+    font-family: 'Tinos';
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.center > p > span {
+    color: #f1b329;
+    font-family: 'Charm';
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right > a > img {
+    height: 50px;
+}
+
+.right > a > img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #490904;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3) ;
+    z-index: -1;
+}
+
+.foot-content {
+    text-align: center;
+    color: #fae8e0;
+    padding: 20px;
+}
+
+.foot-content > p {
+    line-height: 1.5;
+    font-family: 'Tinos';
+}
